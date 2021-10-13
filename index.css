@@ -340,3 +340,41 @@ body {
     border-radius: 0px 0px 15px 15px;
     margin-bottom: 20px;
   }
+  .menu-card__text .menu-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+  }
+  .menu-card__text .menu-title > p {
+    padding: 5px 0px;
+  }
+  .menu-card__text > a {
+    text-decoration: none;
+    color: black;
+  }
+  .menu-card__text .new-menu {
+    position: relative;
+    top: -184px;
+    left: 20%;
+    color: #1b6150;
+    font-weight: 500;
+    background-color: #99E2D0;
+    padding: 11px 15px;
+    border-radius: 3px;
+  }
+  @media screen and (min-width: 426px) {
+    .bloc-menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .menu-card {
+      width: 100%;
+      margin: auto;
+    }
+    .menu-card .new-menu {
+      top: 0;
+      left: 0;
+    }
+  }
