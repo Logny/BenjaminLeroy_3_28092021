@@ -378,3 +378,36 @@ body {
       left: 0;
     }
   }
+  @media screen and (min-width: 768px) {
+    .bloc-menu {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  
+    .menu-card {
+      width: 45%;
+    }
+  }
+  @media screen and (min-width: 1025px) {
+    .bloc-menu {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  
+    .menu-card {
+      width: 40%;
+    }
+  }
+  .eat-menu {
+    position: relative;
+    top: -30px;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f6f6f6;
+    padding: 15px;
+    animation: anim-menu 1.5s;
+    margin-bottom: -30px;
+  }
