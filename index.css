@@ -411,3 +411,39 @@ body {
     animation: anim-menu 1.5s;
     margin-bottom: -30px;
   }
+  .eat-menu h2 {
+    font-size: 18px;
+    font-weight: 200;
+    width: auto;
+    margin-bottom: 4px;
+  }
+  .eat-menu .green-line {
+    background-color: #99E2D0;
+    width: 40px;
+    height: 3px;
+    margin-bottom: 15px;
+  }
+  .eat-menu .eat-title {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .eat-menu .heart-anim {
+    margin-bottom: 20px;
+    margin-left: auto;
+    font-size: 24px;
+  }
+  .eat-menu .first {
+    animation: first 2s;
+  }
+  .eat-menu .second {
+    animation: second 4.5s;
+  }
+  .eat-menu .happy-hour {
+    animation: happy-hour 6s;
+  }
+  main img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
