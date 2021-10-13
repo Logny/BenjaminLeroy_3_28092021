@@ -183,3 +183,139 @@ body {
       margin: auto;
     }
   }
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    margin: 0px auto;
+  }
+  .loader__spin {
+    border: 5px solid transparent;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border-top: 5px solid #9356DC;
+    border-right: 5px solid #FF79DA;
+    border-bottom: 5px solid #99E2D0;
+    cursor: progress;
+    animation: loader 1s linear infinite;
+  }
+  .loader__text {
+    position: absolute;
+    display: flex;
+    font-family: "Shrikhand", sans-serif;
+    font-size: 32px;
+  }
+  .loader__text .loader__oh {
+    animation: text-slide 1000ms linear;
+  }
+  .loader__text .loader__my {
+    animation: text-slide 1000ms linear 250ms;
+  }
+  .loader__text .loader__food {
+    animation: text-slide 1000ms linear 500ms;
+  }
+  @keyframes loader-hide {
+    100% {
+      z-index: -1;
+    }
+  }
+  @keyframes end-loader {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes text-slide {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes full-heart {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes empty-heart {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      z-index: 1;
+      opacity: 1;
+    }
+  }
+  @keyframes clic-heart {
+    0% {
+      transform-origin: bottom;
+      transform: scaleY(0);
+      opacity: 0;
+    }
+    100% {
+      color: black;
+      font-weight: bold;
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+  @keyframes anim-menu {
+    0% {
+      transform: translateY(200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes first {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes second {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes happy-hour {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
