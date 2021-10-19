@@ -490,5 +490,51 @@ body {
     width: 100%;
     margin-bottom: 15px;
   }
+  .eat-card:hover .eat-card__check {
+    transform: translateX(0%);
+    right: 0;
+  }
+  .eat-card:hover .eat-content {
+    width: calc(100% - 60px);
+  }
+  .eat-card:hover .eat-valid {
+    display: inline-block;
+    font-size: 16px;
+    transform: rotate(1turn);
+    transition: transform 700ms ease-in-out 200ms;
+  }
+  .eat-card h3 {
+    padding: 10px 0 5px 10px;
+  }
+  .eat-card__check {
+    position: absolute;
+    width: 60px;
+    right: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms linear;
+    background-color: #99E2D0;
+    color: white;
+    height: 100%;
+    font-size: 16px;
+  }
+  .eat-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    white-space: nowrap;
+    transition: width 500ms linear;
+  }
+  .eat-content__title {
+    width: 100%;
+    min-width: 0;
+  }
+  .eat-content > p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   
 
