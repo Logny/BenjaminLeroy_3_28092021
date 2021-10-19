@@ -536,5 +536,27 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
   }
+  @media screen and (min-width: 426px) {
+    .eat-menu {
+      justify-content: space-around;
+    }
   
+    .first, .second, .happy-hour {
+      width: 90%;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .eat-menu {
+      justify-content: space-around;
+    }
+  
+    .first, .second {
+      width: 40%;
+    }
+  
+    .happy-hour {
+      width: 90%;
+      margin: auto;
+    }
+  }
 
