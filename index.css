@@ -447,3 +447,32 @@ body {
     width: 100%;
     object-fit: cover;
   }
+
+  .first, .second, .happy-hour {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .first h3, .second h3, .happy-hour h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: auto;
+    font-size: 16px;
+  }
+  .first p, .second p, .happy-hour p {
+    justify-content: space-between;
+    width: auto;
+    padding: 0 0 15px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .first span, .second span, .happy-hour span {
+    padding-right: 10px;
+    padding-bottom: 15px;
+    font-weight: bold;
+  }
+
+  
