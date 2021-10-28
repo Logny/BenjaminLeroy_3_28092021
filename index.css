@@ -451,10 +451,10 @@ body {
     animation: first 2s;
   }
   .eat-menu .second {
-    animation: second 4.5s;
+    animation: second 2.5s;
   }
   .eat-menu .happy-hour {
-    animation: happy-hour 5s;
+    animation: happy-hour 3s;
   }
   main img {
     height: 200px;
@@ -640,5 +640,30 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     cursor: pointer;
+  }
+
+  .btn-explore:hover {
+    filter: brightness(115%);
+    box-shadow: 2px 2px 12px #5a5a5a;
+  }
+  .btn-explore:active {
+    box-shadow: -2px -2px 12px #9b9b9b;
+    background: linear-gradient(342deg, #ff79da 0%, #9356dc 50%);
+  }
+  
+  .btn-step {
+    box-shadow: 2px 2px 10px lightgrey;
+    list-style: none;
+    background-color: #f1f0f0;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .btn-step:hover {
+    background-color: #f5edff;
+  }
+  .btn-step:hover i {
+    color: #9356DC;
   }
 
