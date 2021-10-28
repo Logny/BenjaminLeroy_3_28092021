@@ -600,7 +600,7 @@ body {
   .heart-anim:focus .full-heart {
     font-weight: bold;
     background: linear-gradient(4deg, #ff79da 0%, #9356dc 70%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .search-location {
@@ -699,5 +699,67 @@ body {
     cursor: pointer;
   }
 
+  .btn-command:hover {
+    filter: brightness(115%);
+    box-shadow: 2px 2px 12px #5a5a5a;
+  }
+  .btn-command:active {
+    box-shadow: -2px -2px 12px #9b9b9b;
+    background: linear-gradient(342deg, #ff79da 0%, #9356dc 50%);
+  }
   
+  .section-explore {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 0 40px;
+    background-color: #f6f6f6;
+  }
+  .section-explore > h2 {
+    padding: 40px 20px 0 0;
+  }
+  .section-explore > p {
+    padding: 10px 0 25px;
+  }
+  
+  .section-step {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+  }
+  .section-step > h2 {
+    padding-top: 50px;
+    padding-left: 35px;
+    padding-bottom: 35px;
+  }
+  .section-step > ul {
+    margin: auto;
+  }
+  
+  .section-card {
+    background-color: #f1f0f0;
+    max-width: 425px;
+    margin: auto;
+    padding: 22px;
+  }
+  .section-card > h2 {
+    padding: 38px 0 20px;
+  }
+  .section-card img {
+    height: 175px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+
+  main h1 {
+    font-family: "Shrikhand", sans-serif;
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+
 
